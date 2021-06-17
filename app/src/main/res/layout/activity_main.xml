@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     android:layout_width="fill_parent"
@@ -24,8 +23,8 @@
             android:id="@+id/logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8.0dip"
             android:layout_marginStart="8.0dip"
+            android:layout_marginEnd="8.0dip"
             android:src="@drawable/logo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -33,8 +32,7 @@
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/Constraint2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -49,12 +47,12 @@
             android:id="@+id/txtInLayoutUsername"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginRight="32dp"
             android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toTopOf="@id/txtInLayoutPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -65,36 +63,36 @@
                 android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/avatar"
                 android:drawableStart="@drawable/avatar"
-                android:hint="@string/Username"
+                android:drawableLeft="@drawable/avatar"
+                android:hint="Введите имя"
                 android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/txtInLayoutPassword"
-            app:passwordToggleEnabled="true"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8.0dip"
-            android:layout_marginEnd="32dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginRight="32dp"
             android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="8.0dip"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtInLayoutUsername">
+            app:layout_constraintTop_toBottomOf="@+id/txtInLayoutUsername"
+            app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableStart="@drawable/lock"
                 android:drawableLeft="@drawable/lock"
                 android:hint="@string/Password"
-                android:inputType="textPassword"
-                android:drawableStart="@drawable/lock" />
+                android:inputType="textPassword" />
 
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -107,10 +105,10 @@
         android:id="@+id/Constraint3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
         android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         app:layout_constraintBottom_toBottomOf="@id/Constraint2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -119,9 +117,9 @@
 
         <CheckBox
             android:id="@+id/rememberMe"
-            android:text="@string/RememberMe"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="Запомни меня"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -129,15 +127,14 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/Constraint4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
         android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -150,16 +147,16 @@
             android:id="@+id/login"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8.0dip"
-            android:layout_marginEnd="16dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="16dp"
             android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
             android:layout_marginTop="8.0dip"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8.0dip"
             android:layout_weight="1.0"
+            android:background="@drawable/btn_login"
             android:text="@string/Login"
             android:theme="@style/ButtonLogin"
-            android:background="@drawable/btn_login"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/signUp"
             app:layout_constraintStart_toStartOf="parent"
@@ -169,15 +166,15 @@
             android:id="@+id/signUp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8.0dip"
-            android:layout_marginEnd="8.0dip"
-            android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="8.0dip"
+            android:layout_marginEnd="8.0dip"
+            android:layout_marginBottom="8.0dip"
             android:layout_weight="1.0"
+            android:background="@drawable/btn_signup"
             android:text="@string/SignUp"
             android:theme="@style/ButtonSignUp"
-            android:background="@drawable/btn_signup"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/login"
