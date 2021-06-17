@@ -91,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/lock"
                 android:drawableLeft="@drawable/lock"
-                android:hint="@string/Password"
+                android:hint="Пароль"
                 android:inputType="textPassword" />
 
 
@@ -155,7 +155,7 @@
             android:layout_marginBottom="8.0dip"
             android:layout_weight="1.0"
             android:background="@drawable/btn_login"
-            android:text="@string/Login"
+            android:text="Логин"
             android:theme="@style/ButtonLogin"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/signUp"
@@ -173,7 +173,7 @@
             android:layout_marginBottom="8.0dip"
             android:layout_weight="1.0"
             android:background="@drawable/btn_signup"
-            android:text="@string/SignUp"
+            android:text="Регистрация"
             android:theme="@style/ButtonSignUp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
