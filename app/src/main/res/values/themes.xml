@@ -1,48 +1,53 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="@style/Theme.AppCompat.NoActionBar">
-        <item name="android:windowFullscreen">true</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="ButtonLogin" parent="@style/Theme.AppCompat.Light">
-        <item name="android:textColor">@color/white</item>
-        <item name="colorButtonNormal">@color/colorAccent</item>
-        <item name="colorControlHighlight">@color/yellow</item>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="ButtonSignUp" parent="@style/Theme.AppCompat.Light">
-        <item name="android:textColor">@color/white</item>
-        <item name="colorButtonNormal">@color/colorPrimary</item>
-        <item name="colorControlHighlight">@color/yellow</item>
-    </style>
-    <style name="ButtonRegister" parent="@style/Theme.AppCompat.Light">
-        <item name="android:textColor">@android:color/black</item>
-        <item name="colorButtonNormal">@color/yellow</item>
-        <item name="colorControlHighlight">@color/colorPrimary</item>
-    </style>
-    <style name="CardView" parent="@style/Base.CardView" />
-    <style name="CardView.Dark" parent="@style/CardView">
-        <item name="cardBackgroundColor">@color/cardview_dark_background</item>
-    </style>
-    <style name="CardView.Light" parent="@style/CardView">
-        <item name="cardBackgroundColor">@color/cardview_light_background</item>
-    </style>
-    <style name="HeadTitle">
-        <item name="android:textSize">50.0dip</item>
-        <item name="android:typeface">sans</item>
-        <item name="android:color">@color/white</item>
+    <style name="viewParent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
-    <style name="RegistrationPage">
-        <item name="android:textColorHint">@color/black</item>
-        <item name="android:editTextColor">@color/black</item>
-        <item name="android:colorControlNormal">@color/black</item>
-        <item name="android:background">@color/white</item>
+    <style name="viewParent.headerText">
+        <item name="android:textColor">@color/contentTextColor</item>
+        <item name="android:textSize">@dimen/headerTextSize</item>
+        <item name="android:textStyle">bold</item>
     </style>
+
+    <style name="viewParent.headerText.NoMode">
+        <item name="android:textColor">@color/darkTextColor</item>
+    </style>
+
+    <style name="parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="modifiedEditText" parent="parent">
+        <item name="android:textSize">@dimen/newsMoreTextSize</item>
+        <item name="android:backgroundTint">@color/primaryTextColor</item>
+    </style>
+
+    <style name="loginButton" parent="viewParent">
+        <item name="android:background">@drawable/button_background_blue</item>
+        <item name="android:textColor">@color/whiteTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="spinnerHintText" parent="parent">
+        <item name="android:textSize">@dimen/newsMoreTextSize</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+
 </resources>
